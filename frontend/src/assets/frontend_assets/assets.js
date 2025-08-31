@@ -2,14 +2,18 @@ import basket_icon from './basket_icon.png'
 import logo from './surebite-logo-transparent.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
-import menu_1 from './menu_1.png'
-import menu_2 from './menu_2.png'
-import menu_3 from './menu_3.png'
-import menu_4 from './menu_4.png'
-import menu_5 from './menu_5.png'
-import menu_6 from './menu_6.png'
-import menu_7 from './menu_7.png'
-import menu_8 from './menu_8.png'
+import starters from './starters.jpg'
+import sandwich from './sandwich.jpg'
+import shawarma from './shawarma.jpg'
+import salads from './salads.jpg'
+import rice_dishes from './rice_dishes.jpg'
+import pasta from './pasta.jpg'
+import noodles from './noodles.jpg'
+import pizza from './pizza.jpg'
+import protein from './protein.jpg'
+import deserts from './deserts.jpg'
+import drinks from './drinks.jpg'
+
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
@@ -57,7 +61,7 @@ import selector_icon from './selector_icon.png'
 import rating_starts from './rating_starts.png'
 import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
-import logout_icon from './logout_icon.png'
+import logout_icon from './pasta.jpg'
 import parcel_icon from './parcel_icon.png'
 
 export const assets = {
@@ -84,36 +88,48 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
-        menu_image: menu_1
-    },
-    {
-        menu_name: "Rolls",
-        menu_image: menu_2
-    },
-    {
-        menu_name: "Deserts",
-        menu_image: menu_3
+        menu_name: "Starters",
+        menu_image: starters
     },
     {
         menu_name: "Sandwich",
-        menu_image: menu_4
+        menu_image: sandwich
     },
     {
-        menu_name: "Cake",
-        menu_image: menu_5
+        menu_name: "Shawarma",
+        menu_image: shawarma
     },
     {
-        menu_name: "Pure Veg",
-        menu_image: menu_6
+        menu_name: "Salads",
+        menu_image: salads
+    },
+    {
+        menu_name: "Rice Dishes",
+        menu_image: rice_dishes
     },
     {
         menu_name: "Pasta",
-        menu_image: menu_7
+        menu_image: pasta
     },
     {
         menu_name: "Noodles",
-        menu_image: menu_8
+        menu_image: noodles
+    },
+        {
+        menu_name: "Pizza",
+        menu_image: pizza
+    },
+    {
+        menu_name: "Protein Fix",
+        menu_image: protein
+    },
+    {
+        menu_name: "Deserts",
+        menu_image: deserts
+    },
+    {
+        menu_name: "Drinks",
+        menu_image: drinks
     }]
 
 export const food_list = [

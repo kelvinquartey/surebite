@@ -17,6 +17,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.116);
   z-index: 1;
+  border-radius: 20px;
 }
 
 .header-contents {
