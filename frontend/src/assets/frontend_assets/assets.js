@@ -149,6 +149,7 @@ export const assets = {
     linkedin_icon,
     facebook_icon,
     twitter_icon,
+    x_icon,
     cross_icon,
     selector_icon,
     profile_icon,
@@ -457,7 +458,7 @@ export const food_list = [
         image: food_35,
         price: 20,
         description: "A vegan favorite, loaded with colorful veggies.",
-        category: "Salads"
+        category: "Rice Dishes"
     }, {
         _id: "36",
         name: "Jollof Rice",
@@ -681,14 +682,14 @@ export const food_list = [
         image: food_67,
         price: 20,
         description: "Oven-baked drumsticks with zesty lemon marinade.",
-        category: "Pizza"
+        category: "Protein Fix"
     }, {
         _id: "68",
         name: "Stuffed Chicken Breast",
         image: food_68,
         price: 20,
         description: "Filled with spinach and cheese, baked until golden.",
-        category: "Pizza"
+        category: "Protein Fix"
     }, {
         _id: "69",
         name: "Chocolate Brownie",
