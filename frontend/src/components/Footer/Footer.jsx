@@ -5,11 +5,11 @@ import { assets} from '../../assets/frontend_assets/assets'
 
 const Footer = () => {
   return (
-    <section className='footer'>
+    <section className='footer' id='footer'>
       <div className="footer-content">
         <div className="footer-content-left">
           <img className='footer-logo' src={assets.logo} alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt possimus velit animi pariatur. Quod fugit, earum ex vitae aliquid ab suscipit id atque consequatur commodi. Sapiente reprehenderit natus assumenda.</p>
+          <p>Bringing you delicious meals made with care and the finest ingredients. Whether it's a quick bite or a family feast, we've got your cravings covered.</p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="Facobook Icon" />
             <img src={assets.twitter_icon} alt="X Icon" />

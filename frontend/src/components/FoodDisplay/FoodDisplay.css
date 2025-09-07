@@ -14,3 +14,9 @@
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 30px;
 }
+
+@media (min-width: 480px) and (max-width: 570px)  {
+    .food-display-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

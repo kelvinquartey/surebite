@@ -54,3 +54,36 @@
     border-radius: 50px;
     cursor: pointer;
 }
+
+
+@media (max-width: 1050px ){
+    .header {
+        height: 40vw;
+    }
+
+    .header-contents {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 750px ){
+    .header {
+        height: 38vw;
+    }
+
+    .header-contents {
+        max-width: 60%;
+    }
+
+    .header-contents p{
+        display: none;
+    }
+
+    .header-contents h2{
+        margin-bottom: 10px;
+    }
+
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}

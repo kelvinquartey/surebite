@@ -15,7 +15,6 @@ const StoreContextProvider = (props) => {
 
     useEffect(() => {
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
-        console.log(cartItems)
     }, [cartItems])
 
     const addToCart = (itemId) => {
