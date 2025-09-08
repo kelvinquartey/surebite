@@ -32,10 +32,6 @@ const StoreContextProvider = (props) => {
         }
     }
 
-    // const removeFromCart = (itemId) => {
-    //     setCartitems((prev)=>({...prev,[itemId]:prev[itemId] - 1}))
-    // }
-
     const removeFromCart = (itemId) => {
         setCartitems((prev) => {
         if (prev[itemId] === 1) {
@@ -48,13 +44,57 @@ const StoreContextProvider = (props) => {
         });
     };
 
+    const deleteFromCart = (itemId) => {
+        setCartitems((prev) => {
+            const updatedCart = { ...prev };
+            delete updatedCart[itemId];
+            return updatedCart;
+
+        });
+    };
+
+    const clearCart = () => {
+        setCartitems({});
+    };
+
+
+    // const getTotalCartAmount = () => {
+    //     let totalAmount = 0;
+
+    //     for (const item in cartItems) {
+    //         const itemInfo = food_list.find((product) => product._id === item);
+
+    //         if (itemInfo) { 
+    //             totalAmount += itemInfo.price * cartItems[item];
+    //         }
+    //     }
+    //     return totalAmount;
+    // };
+
+    const getTotalCartAmount = () => {
+        let totalAmount = 0;
+
+        Object.entries(cartItems).forEach(([itemId, quantity]) => {
+            const itemInfo = food_list.find((product) => product._id === itemId);
+            if (itemInfo) {
+            totalAmount += itemInfo.price * quantity;
+            }
+        });
+
+        return totalAmount;
+    };
+
+
 
     const contextValue = {
         food_list,
         cartItems,
         setCartitems,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        deleteFromCart,
+        clearCart,
+        getTotalCartAmount
     }
 
     // useEffect(()=> {
