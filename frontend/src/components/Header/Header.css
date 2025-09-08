@@ -1,6 +1,5 @@
 .header {
     height: 40vw;
-    /* height: 90vh; */
     margin: 20px auto;
     background: url('/pix.jpg') no-repeat;
     background-size: cover;
@@ -85,5 +84,11 @@
 
     .header-contents button{
         padding: 2vw 4vw;
+    }
+}
+
+@media (max-width: 400px ){
+    .header {
+        height: 50vw;
     }
 }

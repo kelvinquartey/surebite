@@ -3,15 +3,15 @@ import './Navbar.css'
 import {assets} from '../../assets/frontend_assets/assets'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
-    const [menu, setMenu] = useState("home")
+const Navbar = ({setShowLogin}) => {
+    // const [menu, setMenu] = useState("home")
   return (
     <section className='navbar'>
         <img src={assets.logo} alt="logo" className="logo" />
         <ul className="navbar-menu">
-            <Link to='/' onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Home</Link>
-            <a href='#explore-menu' onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>Menu</a>
-            <a href='#footer' onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Contact Us</a>
+            <Link to='/' className="active">Home</Link>
+            <a href='#explore-menu' >Menu</a>
+            <a href='#footer' >Contact Us</a>
         </ul>
 
         <div className="navbar-right">
@@ -20,7 +20,7 @@ const Navbar = () => {
                 <img src={assets.basket_icon} alt="basket icon" />
                 <div className="dot"></div>
             </div>
-            <button>Sign In</button>
+            <button onClick={()=>setShowLogin(true)}>Sign In</button>
         </div>
     </section>
   )

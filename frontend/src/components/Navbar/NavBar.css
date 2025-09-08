@@ -17,6 +17,10 @@
     font-size: 1.125rem;
 }
 
+.navbar-menu a:hover{
+    font-weight: 500;
+}
+
 .navbar-right {
     display: flex;
     align-items: center;
@@ -28,7 +32,7 @@
     font-size: 1rem;
     padding: 10px 30px;
     color: #49557e;
-    border: 1px solid tomato;
+    border: 1px solid #f1221b;
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
