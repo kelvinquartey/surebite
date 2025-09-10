@@ -1,8 +1,21 @@
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+}
+
+.navbar-contents {
+    width: 90%;
+    margin: auto;
     display: flex;
-    padding: 20px 0px;
     justify-content: space-between;
     align-items: center;
+    height: fit-content;
+    padding: 15px 0px;
 }
 
 .navbar .logo {

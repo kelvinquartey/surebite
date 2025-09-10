@@ -5,6 +5,8 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
     const [cartItems, setCartitems] = useState({})
+    const deliveryFee = 45;
+    const serviceFee = 3;
 
     useEffect(() => {
         const storedCartItems = localStorage.getItem("cartItems");
@@ -94,7 +96,10 @@ const StoreContextProvider = (props) => {
         removeFromCart,
         deleteFromCart,
         clearCart,
-        getTotalCartAmount
+        getTotalCartAmount,
+        deliveryFee,
+        serviceFee
+
     }
 
     // useEffect(()=> {

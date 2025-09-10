@@ -1,0 +1,91 @@
+.place-holder {
+    margin: 50px 0px;
+    min-height: 80vh;
+}
+
+.instructions p {
+    font-size: 1.5rem;
+}
+
+.instructions-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: 15px 0px;
+    overflow-x: auto;
+    scrollbar-width: none; 
+}
+
+.instructions-list::-webkit-scrollbar{
+    display: none;
+}
+
+.instruction-item {
+    background-color: #d6d6d698;
+    padding: 13px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.instruction-item.active {
+  background: green;
+  color: white;
+}
+
+.additional-note input{
+    font-size: 16px;
+    padding: 10px;
+    width: 40%;
+    border: 1px solid #5c5b5b;
+}
+
+.total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    margin-block: 15px;
+    font-size: 1.3rem;
+}
+
+.total-details b {
+  color: #f1221b;
+}
+
+
+.hr {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.place-order {
+    border: none;
+    color: #fff;
+    background-color: tomato;
+    width: max(15vw, 200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.place-order:hover {
+    background-color: #f1221b;
+}
+
+
+@media (max-width: 1024px) {
+    .additional-note input{
+        width: 70%;
+        border: 1px solid #5c5b5b;
+    }
+}
+
+@media (max-width: 768px) {
+    .additional-note input{
+        width: 100%;
+        border: 1px solid #5c5b5b;
+    }
+}

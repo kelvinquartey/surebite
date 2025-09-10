@@ -11,7 +11,7 @@
 }
 
 .cart-item-container, .cart-bottom {
-    border: 1px solid #9e9e9e;
+    border: 1.5px solid #9e9e9e;
     border-radius: 4px;
     padding: 18px;
 }
@@ -94,9 +94,10 @@
 .cart-total-details:last-child {
   color: #000;
   font-weight: 500;
+  font-size: 1.3rem;
 }
 
-.cart-total-details:last-child b {
+.cart-total-details b {
   color: #f1221b;
 }
 
