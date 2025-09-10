@@ -14,7 +14,7 @@ const Navbar = ({setShowLogin}) => {
         <Link to='/'><img src={assets.logo} alt="logo" className="logo" /></Link>
         <ul className="navbar-menu">
             <Link to='/' className="active">Home</Link>
-            <a href='#explore-menu' >Menu</a>
+            <a href='/#explore-menu' >Menu</a>
             <a href='#footer' >Contact Us</a>
         </ul>
 
