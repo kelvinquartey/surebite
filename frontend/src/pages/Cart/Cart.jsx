@@ -41,6 +41,7 @@ const Cart = () => {
           ):
           (<h2 className="empty-cart-message">
               No items in the cart
+              <button>Explore Menu</button>
           </h2>)
         }
       </div>

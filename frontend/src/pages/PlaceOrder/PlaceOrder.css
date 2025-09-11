@@ -3,6 +3,29 @@
     min-height: 80vh;
 }
 
+.address-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.address-details p{
+    font-size: 1.5rem;
+}
+
+.address-details input {
+    padding: 8px;
+    width: 250px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 40%;
+    border: 1px solid #5c5b5b;  
+}
+
+
 .instructions p {
     font-size: 1.5rem;
 }
@@ -55,7 +78,7 @@
 }
 
 
-.hr {
+.place-holder hr {
     margin-top: -10px;
     margin-bottom: 20px;
 }
@@ -75,11 +98,40 @@
     background-color: #f1221b;
 }
 
+.empty-order-message {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #777;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.empty-order-message button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    width: fit-content;
+    cursor: pointer;
+}
+
 
 @media (max-width: 1024px) {
     .additional-note input{
         width: 70%;
         border: 1px solid #5c5b5b;
+    }
+
+    .address-details input {
+        width: 70%;
+        border: 1px solid #5c5b5b;        
     }
 }
 
@@ -87,5 +139,10 @@
     .additional-note input{
         width: 100%;
         border: 1px solid #5c5b5b;
+    }
+
+    .address-details input {
+        width: 100%;
+        border: 1px solid #5c5b5b;        
     }
 }
