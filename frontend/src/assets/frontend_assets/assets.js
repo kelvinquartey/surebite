@@ -136,6 +136,7 @@ import logout_icon from './pasta.jpg'
 import parcel_icon from './parcel_icon.png'
 import delete_icon from './delete_icon.png'
 import map_pin from './map_pin_logo.png'
+import checkmark from './checkmark_icon.png'
 
 export const assets = {
     logo,
@@ -158,7 +159,8 @@ export const assets = {
     bag_icon,
     parcel_icon,
     delete_icon,
-    map_pin
+    map_pin,
+    checkmark
 }
 
 export const menu_list = [

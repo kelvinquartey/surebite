@@ -20,12 +20,15 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding: 40px 0;
+    flex-direction: column;
+}
+
+.empty-cart-message h2 {
     font-size: 1.9rem;
     font-weight: 500;
+    margin-bottom: 20px;
     color: #777;
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
 }
 
 .empty-cart-message button {
@@ -37,6 +40,12 @@
     display: inline-block;
     width: fit-content;
     cursor: pointer;
+    background: #28a746cc;
+    transition: background 0.3s ease;
+}
+
+.empty-cart-message button:hover {
+  background: #218838;
 }
 
 .cart-item-container{

@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './PlaceOrder.css'
 import { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext'
 import { assets } from '../../assets/frontend_assets/assets'
+import OrderPlaced from '../../components/OrderPlaced/OrderPlaced'
+import { useNavigate } from 'react-router-dom'
 // import Map from '../../components/Map/Map'
 
 const PlaceOrder = () => {
@@ -14,19 +16,39 @@ const PlaceOrder = () => {
     "Meet in the lobby"
   ]
 
-  const {getTotalCartAmount,deliveryFee, serviceFee} = useContext(StoreContext)
+  const {getTotalCartAmount,deliveryFee, serviceFee, clearCart} = useContext(StoreContext)
   const total = getTotalCartAmount() + deliveryFee + serviceFee;
-  const [selectedInstruction, setSelectedInstruction] = useState(null);
+  const [selectedInstruction, setSelectedInstruction] = useState("Meet at the Door");
+  const [orderPlaced, setOrderPlaced] = useState(false);
+  const navigate = useNavigate();
+
+  const handlePlaceOrder = (e) => {
+    e.preventDefault(); 
+    setOrderPlaced(true); 
+  }; 
+
+  const handleClose = () => {
+    navigate('/', {replace:true})
+    setOrderPlaced(false);
+    clearCart();
+  }
+
+  useEffect(() => {
+    if (orderPlaced) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "auto"
+    }
+  }, [orderPlaced])
+
 
   return (
     <>
-    {getTotalCartAmount() > 0 ?
-      (
-      <form action="" className="place-holder">
+      <form onSubmit={handlePlaceOrder} className="place-holder">
         {/* <Map/>     */}
         <div className='address-details'>
           <p>Address Details</p>
-          <input type="text" placeholder='*Address' name='address'  required/>
+          <input type="text" placeholder='*Address' name='address' required/>
           <input type="text" placeholder='Apartment,flat or suite number' name='apartment'/>
           <input type="text" placeholder='Floor' name='apartment'/>          
         </div>
@@ -73,13 +95,8 @@ const PlaceOrder = () => {
         <hr/>
         <button className='place-order'>Place Order</button>
       </form>
-      ):
-      (<div className="empty-order-message">
-        No items in the cart
 
-        <button>Explore Menu</button>
-      </div>)
-    }
+    {orderPlaced && <OrderPlaced onClose={() => handleClose()} />}
     </>
   )
 }

@@ -1,0 +1,24 @@
+.not-found {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found h2 {
+    font-size: 2rem;
+}
+
+.not-found button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.not-found button:hover {
+  background: #218838;
+}

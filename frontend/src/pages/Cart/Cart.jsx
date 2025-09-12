@@ -39,10 +39,10 @@ const Cart = () => {
               }
             })
           ):
-          (<h2 className="empty-cart-message">
-              No items in the cart
-              <button>Explore Menu</button>
-          </h2>)
+          (<div className="empty-cart-message">
+              <h2>No items in the cart</h2>
+              <button onClick={() => navigate('/')}>Explore Menu</button>
+          </div>)
         }
       </div>
 

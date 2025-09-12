@@ -6,6 +6,8 @@ import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
 import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
+import NotFound from './components/NotFound/NotFound'
+import ScrollToTop from './components/Scroll/ScrollToTop'
 
 const App = () => {
 
@@ -16,10 +18,13 @@ const App = () => {
       {showLogin && <LoginPopup setShowLogin={setShowLogin}/>}
       <div className='app'>
         <Navbar setShowLogin={setShowLogin}/>
+
+        <ScrollToTop />
         <Routes>
           <Route path ='/' element={<Home/>} />
           <Route path ='/cart' element={<Cart/>} />
           <Route path ='/order' element={<PlaceOrder/>} />
+          <Route path='*' element={<NotFound />}/>
         </Routes>
       </div>
       <Footer />
