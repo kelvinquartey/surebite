@@ -1,13 +1,19 @@
 import React from 'react'
 import './Header.css'
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
+
   return (
     <section className='header'>
         <div className="header-contents">
             <h2>Bites Made Just for You</h2>
             <p>Choose from a diverse menu filled with fresh flavors and comforting favorites — perfect for family dinners, quick lunches, or late-night cravings.</p>
-            <button>View Menu</button>
+            <button   onClick={() => {
+              document.getElementById("explore-menu")?.scrollIntoView({ 
+                behavior: "smooth" 
+              });
+            }}>View Menu</button>
         </div>
     </section>
   )

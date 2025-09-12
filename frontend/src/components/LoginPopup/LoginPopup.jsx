@@ -41,15 +41,15 @@ const LoginPopup = ({setShowLogin}) => {
                 <input type="email" placeholder='Your email' name="" required/>
                 <input type="password" placeholder='Password' name="" required/>
             </div>
-            <button>{currentState==="Sign Up"?"Create account":"Login"}</button>
+            <button onClick={() => navigate('/')}>{currentState==="Sign Up"?"Create account":"Login"}</button>
             <div className="login-popup-condition">
                 <input type="checkbox" name="" id="" required/>
-                <p>By continuing, you are agreeing to our <span className='privacy-policy'>Terms of use & privacy policy.</span></p>
+                <p>By continuing, you are agreeing to our <span className='privacy-policy-login'>Terms of use & privacy policy.</span></p>
             </div>
-                {currentState==="Login"?
-                <p>Don't have an account? <span onClick={()=>setCurrentState("Sign Up")}>Create a new Account</span></p>:
-                <p>Already have an account? <span onClick={()=>setCurrentState("Login")}>Sign In</span></p>
-                }
+            {currentState==="Login"?
+            <p>Don't have an account? <span onClick={()=>setCurrentState("Sign Up")}>Create a new Account</span></p>:
+            <p>Already have an account? <span onClick={()=>setCurrentState("Login")}>Sign In</span></p>
+            }
         </form>
     </div>
   )

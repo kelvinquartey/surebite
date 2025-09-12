@@ -1,0 +1,76 @@
+.about-page {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    color: #e63946;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h2 {
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.menu-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.menu-card h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.about-section li{
+    list-style:disc;
+}
+
+.highlight {
+    background: #fef3f3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-closing {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-closing h2 {
+    color: #e63946;
+    margin-bottom: 15px;
+}

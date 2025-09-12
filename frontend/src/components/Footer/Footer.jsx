@@ -21,7 +21,7 @@ const Footer = () => {
           <h2>COMPANY</h2>
           <ul>
             <li><Link to='/' onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link></li>
-            <li><Link to='/'>About Us</Link></li>
+            <li><Link to='/about'>About Us</Link></li>
             <li><Link to="/privacy-policy" >Privacy Policy</Link></li>
           </ul>
         </div>

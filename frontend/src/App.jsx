@@ -9,6 +9,7 @@ import LoginPopup from './components/LoginPopup/LoginPopup'
 import NotFound from './components/NotFound/NotFound'
 import ScrollToTop from './components/Scroll/ScrollToTop'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
+import About from './pages/About/About'
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path ='/cart' element={<Cart/>} />
           <Route path ='/order' element={<PlaceOrder/>} />
           <Route path ='/privacy-policy' element={<PrivacyPolicy/>} />
+          <Route path ='/about' element={<About/>} />
           <Route path='*' element={<NotFound />}/>
         </Routes>
       </div>
