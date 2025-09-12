@@ -13,15 +13,6 @@ body{
   min-height: 100vh;
 }
 
-/* .no-scroll {
-  overflow: hidden;
-  height: 100%;            
-  touch-action: none;      
-  overscroll-behavior: none; 
-  position: fixed;         
-  width: 100%; 
-} */
-
 a{
   text-decoration: none;
   color: inherit;

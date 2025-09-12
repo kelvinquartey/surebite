@@ -6,7 +6,7 @@ const LoginPopup = ({setShowLogin}) => {
     const [closing, setClosing] = useState(false);
 
     const handleClose = () => {
-    setClosing(true); // trigger fadeOut
+    setClosing(true);
     setTimeout(() => setShowLogin(false), 500);
     };
 
