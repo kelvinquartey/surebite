@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import NotFound from './components/NotFound/NotFound'
 import ScrollToTop from './components/Scroll/ScrollToTop'
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path ='/' element={<Home/>} />
           <Route path ='/cart' element={<Cart/>} />
           <Route path ='/order' element={<PlaceOrder/>} />
+          <Route path ='/privacy-policy' element={<PrivacyPolicy/>} />
           <Route path='*' element={<NotFound />}/>
         </Routes>
       </div>

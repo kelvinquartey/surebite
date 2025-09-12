@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { assets} from '../../assets/frontend_assets/assets'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -19,9 +20,9 @@ const Footer = () => {
         <div className="footer-content-center">
           <h2>COMPANY</h2>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Privacy Policy</li>
+            <li><Link to='/' onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link></li>
+            <li><Link to='/'>About Us</Link></li>
+            <li><Link to="/privacy-policy" >Privacy Policy</Link></li>
           </ul>
         </div>
         <div className="footer-content-right">
