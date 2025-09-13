@@ -42,6 +42,7 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .order-placed-contents button:hover {
